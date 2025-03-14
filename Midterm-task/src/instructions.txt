@@ -1,0 +1,44 @@
+Для второго разработчика (part2):
+- Реализовать Decorator Pattern (логирование, расписание, энергосбережение)
+  - Example: ScheduledOperationDecorator(part1.SmartDevice device, LocalTime startTime, LocalTime endTime)
+  - Example: LoggingDecorator(part1.SmartDevice device)
+
+- Создать AdvancedSmartHomeFactory с продвинутыми устройствами (AI-термостаты, датчики)
+  - Example: AI_Thermostat extends part1.SmartDevice { void setTemperature(int temp); }
+  - Example: MotionSensor extends part1.SmartDevice { boolean isMotionDetected(); }
+
+- Интегрировать Adapter Pattern для совместимости со старыми системами
+  - Example: LegacyDoorLockAdapter implements part1.SmartDevice { void unlockDoor(); void lockDoor(); }
+  - Example: WeatherAPIAdapter { String getCurrentWeather(); }
+
+- Добавить поддержку управления через GUI
+  - Example: Java Swing интерфейс с кнопками управления устройствами
+  - Example: Добавление списка устройств с возможностью управления
+
+- Реализовать консольное меню для взаимодействия с системой:
+  1. Добавить новое устройство (с выбором типа: свет, камера, пылесос).
+  2. Включить/выключить отдельное устройство.
+  3. Включить все светильники.
+  4. Установить глобальную температуру.
+  5. Показать статус системы.
+  6. Выйти из программы.
+
+Примерная структура меню:
+public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    part1.SmartHomeController controller = new part1.SmartHomeController();
+    part1.SmartHomeFactory factory = new part1.BasicSmartHomeFactory();
+
+    while (true) {
+        System.out.println("Выберите действие:");
+        System.out.println("1. Добавить устройство");
+        System.out.println("2. Включить/выключить устройство");
+        System.out.println("3. Включить все светильники");
+        System.out.println("4. Установить глобальную температуру");
+        System.out.println("5. Показать статус системы");
+        System.out.println("6. Выход");
+        int choice = scanner.nextInt();
+
+        // Реализация обработки действий
+    }
+}
