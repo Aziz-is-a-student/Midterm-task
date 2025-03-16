@@ -1,7 +1,7 @@
 package part1;
 
 // Интерфейс умного устройства
-interface SmartDevice {
+public interface SmartDevice {
     void turnOn();
 
     void turnOff();
