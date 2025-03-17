@@ -1,6 +1,6 @@
 package part1;
 
-class BasicSmartHomeFactory implements SmartHomeFactory {
+public class BasicSmartHomeFactory implements SmartHomeFactory {
     @Override
     public Light createLight(String name) {
         return new Light(name);

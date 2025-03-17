@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Facade: Контроллер умного дома
-class SmartHomeController {
-    private List<SmartDevice> devices = new ArrayList<>();
+public class SmartHomeController {
+    public List<SmartDevice> devices = new ArrayList<>();
 
     public void addDevice(SmartDevice device) {
         devices.add(device);
