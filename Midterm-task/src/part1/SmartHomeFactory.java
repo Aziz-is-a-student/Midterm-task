@@ -1,4 +1,4 @@
-package part1;// Composite: Группа устройств (например, комната, этаж)
+package part1;
 
 // Abstract Factory: Фабрика для создания устройств
 public interface SmartHomeFactory {
